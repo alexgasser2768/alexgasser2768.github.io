@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grimages et tralala | Face Art Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <nav class="nav-bar" id="top">
+        <img src="images/logo.png" alt="Grimages et tralala" class="nav-logo">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="nav-burger" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </label>
+        <div class="nav-links">
+            <a href="#top">Accueil</a>
+            <a href="#services">Prestations</a>
+            <a href="#events">Événements</a>
+            <a href="#why">Pourquoi</a>
+            <a href="#gallery">Galerie</a>
+            <a href="#testimonials">Livre d'Or</a>
+            <a href="#contact" class="nav-cta">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="rainbow-text">Grimages et tralala</h1>
+        <p class="subtitle">Margaux, créatrice de sourires.</p>
+        <p class="subtitle">Magie et paillettes au rendez-vous.</p>
+
+        
+    </header>
+
+    <main class="container">
+        <section class="container services-section" id="services">
+            <h2 class="rainbow-text small">Mes Prestations Artistiques</h2>
+            <div class="services-grid">
+                <div class="service-card neon-pink">
+                    <div class="service-icon">🎨</div>
+                    <h3>Grimage Festif</h3>
+                    <p>Facepainting pour enfants et adultes. Deviens qui tu veux: Super héros, animal, princesse ou créature féerique.</p>
+                    <span class="service-tag">Produits professionnels et de qualité</span>
+                </div>
+
+                <div class="service-card neon-blue">
+                    <div class="service-icon">✨</div>
+                    <h3>Tattoos Éphémères</h3>
+                    <p>Tatouages temporaires: Maquillage noir (pochoir) ou colle et paillettes. Idéal pour les ados, les grands enfants et vos ladies night!</p>
+                    <span class="service-tag">Effet shiny garanti</span>
+                </div>
+
+                <div class="service-card neon-green">
+                    <div class="service-icon">🎭</div>
+                    <h3>Thèmes & Costumes</h3>
+                    <p>Je m'adapte à votre thème ! Possibilité de venir déguisée selon votre événement (Noël, Halloween, Minnie, Princesse, Licorne/arc-en-cien, Stitch, Wander Woman...).</p>
+                    <span class="service-tag">Sur demande</span>
+                </div>
+
+                    <div class="service-card neon-purple">
+                    <div class="service-icon">🎁</div>
+                    <h3>Chèques Cadeaux</h3>
+                    <p>Offrez une prestation anniversaire: Un cadeau unique et coloré !</p>
+                    <span class="service-tag">Personnalisé</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-section" id="events">
+            <h2 class="rainbow-text small">Pour vos Événements</h2>
+            <div class="events-grid">
+                <div class="event-item">
+                    <div class="event-badge neon-pink">🎉</div>
+                    <h3>Partout où la fête bat son plein !</h3>
+                    <p>Je crée des souvenirs colorés pour tous vos moments joyeux.</p>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-badge neon-blue">🏠</div>
+                    <h3>En famille</h3>
+                    <p>Anniversaires, baptêmes, mariages, communions, fêtes laïques.</p>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-badge neon-green">🏢</div>
+                    <h3>Entreprise & public</h3>
+                    <p>Arbres de Noël, portes ouvertes, fêtes des voisins, fêtes d'école, ducasses, kermesses, brocantes, octobre rose.</p>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-badge neon-yellow">🎃</div>
+                    <h3>Saisonnier</h3>
+                    <p>Chasses aux œufs, Halloween, Saint-Nicolas, marchés de Noël, camps de vacances, carnaval...</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="gallery" id="gallery">
+            <h2 class="rainbow-text small">Ma Galerie Créative</h2>
+            <div class="carousel-container gallery-container">
+                <button class="carousel-btn carousel-btn-prev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="gallery-carousel">
+                    <div class="gallery-track">                        
+                        <div class="polaroid neon-blue">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_licorne.jpeg" alt="Face Paint 2">
+                                <div class="polaroid-caption">Licorne</div>
+                            </div>
+                        </div>
+                        
+                        <div class="polaroid neon-green">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_tigre.jpeg" alt="Face Paint 3">
+                                <div class="polaroid-caption">Tigre</div>
+                            </div>
+                        </div>
+                        
+                        <div class="polaroid neon-yellow">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_hulk.jpeg" alt="Face Paint 4">
+                                <div class="polaroid-caption">Hulk</div>
+                            </div>
+                        </div>
+                        
+                        <div class="polaroid neon-purple">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_pikachu.jpeg" alt="Face Paint 5">
+                                <div class="polaroid-caption">Pikachu</div>
+                            </div>
+                        </div>
+                        
+                        <div class="polaroid neon-orange">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_renard.jpeg" alt="Face Paint 6">
+                                <div class="polaroid-caption">Renard</div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="polaroid neon-blue">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/adulte2.jpeg" alt="Face Paint 2">
+                                <div class="polaroid-caption">Coeur</div>
+                            </div>
+                        </div>
+                        
+                        <div class="polaroid neon-green">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_fée.jpeg" alt="Face Paint 3">
+                                <div class="polaroid-caption">Fée</div>
+                            </div>
+                        </div>
+                        
+                        <div class="polaroid neon-yellow">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_loup.jpeg" alt="Face Paint 4">
+                                <div class="polaroid-caption">Loup</div>
+                            </div>
+                        </div>
+                        
+                        <div class="polaroid neon-purple">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_fluorescent.jpeg" alt="Face Paint 5">
+                                <div class="polaroid-caption">Fluorescent</div>
+                            </div>
+                        </div>
+                        
+                        <div class="polaroid neon-orange">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/adulte1.jpeg" alt="Face Paint 6">
+                                <div class="polaroid-caption">Guépard</div>
+                            </div>
+                        </div>
+
+
+                        <!--  -->
+
+                        <div class="polaroid neon-blue">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_sorciere.jpeg" alt="Face Paint 2">
+                                <div class="polaroid-caption">Sorcière</div>
+                            </div>
+                        </div>
+                        
+                        <div class="polaroid neon-green">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_scorpion.jpeg" alt="Face Paint 3">
+                                <div class="polaroid-caption">Scorpion</div>
+                            </div>
+                        </div>
+                        
+                        <div class="polaroid neon-yellow">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_mini.jpeg" alt="Face Paint 4">
+                                <div class="polaroid-caption">Minnie</div>
+                            </div>
+                        </div>
+                        
+                        <div class="polaroid neon-purple">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_sirene.jpeg" alt="Face Paint 5">
+                                <div class="polaroid-caption">Sirene</div>
+                            </div>
+                        </div>
+                        
+                        <div class="polaroid neon-orange">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_hiboux.jpeg" alt="Face Paint 6">
+                                <div class="polaroid-caption">Hibou</div>
+                            </div>
+                        </div>
+                        <div class="polaroid neon-orange">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_indestructible.jpeg" alt="Face Paint 6">
+                                <div class="polaroid-caption">Flash</div>
+                            </div>
+                        </div>
+
+                        <div class="polaroid neon-orange">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_tete_de.jpeg" alt="Face Paint 6">
+                                <div class="polaroid-caption">Tête de mort</div>
+                            </div>
+                        </div>
+                        <div class="polaroid neon-orange">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_robot.jpeg" alt="Face Paint 6">
+                                <div class="polaroid-caption">Robot</div>
+                            </div>
+                        </div>
+                        <div class="polaroid neon-orange">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/maquillage_fleur.jpeg" alt="Face Paint 6">
+                                <div class="polaroid-caption">Fleur</div>
+                            </div>
+                        </div>
+                        <div class="polaroid neon-orange">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/adulte3.jpeg" alt="Face Paint 6">
+                                <div class="polaroid-caption">Bijoux</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                
+                <button class="carousel-btn carousel-btn-next" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="gallery-dots carousel-dots"></div>
+        </section>
+
+        <section class="why-section" id="why">
+            <h2 class="rainbow-text small">Pourquoi me choisir ?</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon-badge neon-pink">🌍</div>
+                    <h3>Multilingue</h3>
+                    <p>Possibilité de communiquer en Français, Néerlandais and Good notions of English too &#128521;.</p>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon-badge neon-blue">✅</div>
+                    <h3>Qualité & Sécurité</h3>
+                    <p>Maquilleuse formée utilisant exclusivement des produits professionnels certifiés (hypoallergéniques).</p>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon-badge neon-green">💼</div>
+                    <h3>Professionnalisme</h3>
+                    <p>Statut d'indépendante complémentaire avec facturation officielle.</p>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon-badge neon-yellow">📍</div>
+                    <h3>Zone d'intervention</h3>
+                    <p>Je me déplace en Belgique (Hainaut, Bruxelles, Flandre occidentale) ainsi que dans les Hauts-de-France.</p>
+                </div>
+            </div>
+
+
+            
+            <div class="carousel-container gallery-container">
+                <button class="carousel-btn carousel-btn-prev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="gallery-carousel">
+
+                <div class="gallery-track">
+                        <div class="polaroid neon-orange">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/materiel.jpeg" alt="Face Paint 6">
+                                <div class="polaroid-caption">Stand</div>
+                            </div>
+                        </div>
+
+                        <div class="polaroid neon-blue">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/ia.jpeg" alt="Face Paint 6">
+                                <div class="polaroid-caption">A votre service</div>
+                            </div>
+                        </div>
+
+                        <div class="polaroid neon-pink">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/affichage.jpeg" alt="Face Paint 6">
+                                <div class="polaroid-caption">Panneau</div>
+                            </div>
+                        </div>
+
+
+                        <div class="polaroid neon-green">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/text1.jpeg" alt="Face Paint 6">
+                                <div class="polaroid-caption">Improvisation</div>
+                            </div>
+                        </div>
+
+
+                        <div class="polaroid neon-purple">
+                            <div class="polaroid-frame">
+                                <img src="images/carousel/text2.jpeg" alt="Face Paint 6">
+                                <div class="polaroid-caption">Genrés</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn carousel-btn-next" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="gallery-dots carousel-dots"></div>
+
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <h2 class="rainbow-text small">Mon Livre d'Or</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-btn-prev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="testimonials-carousel">
+                    <div class="testimonials-track">
+                        <div class="testimonial-card neon-pink">
+                            <img src="images/testimonial/testimonial1.png" alt="Facebook comment 1">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-blue">
+                            <img src="images/testimonial/testimonial2.png" alt="Facebook comment 2">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-green">
+                            <img src="images/testimonial/testimonial3.png" alt="Facebook comment 3">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-yellow">
+                            <img src="images/testimonial/testimonial4.png" alt="Facebook comment 4">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-purple">
+                            <img src="images/testimonial/testimonial5.png" alt="Facebook comment 5">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-orange">
+                            <img src="images/testimonial/testimonial6.png" alt="Facebook comment 6">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-pink">
+                            <img src="images/testimonial/testimonial7.png" alt="Facebook comment 7">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-blue">
+                            <img src="images/testimonial/testimonial8.png" alt="Facebook comment 8">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-pink">
+                            <img src="images/testimonial/testimonial9.png" alt="Facebook comment 1">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-blue">
+                            <img src="images/testimonial/testimonial10.png" alt="Facebook comment 2">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-green">
+                            <img src="images/testimonial/testimonial11.png" alt="Facebook comment 3">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-yellow">
+                            <img src="images/testimonial/testimonial12.png" alt="Facebook comment 4">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-purple">
+                            <img src="images/testimonial/testimonial13.png" alt="Facebook comment 5">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-orange">
+                            <img src="images/testimonial/testimonial14.png" alt="Facebook comment 6">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-pink">
+                            <img src="images/testimonial/testimonial15.png" alt="Facebook comment 7">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-blue">
+                            <img src="images/testimonial/testimonial16.png" alt="Facebook comment 8">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+
+                        <div class="testimonial-card neon-yellow">
+                            <img src="images/testimonial/testimonial17.png" alt="Facebook comment 4">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-purple">
+                            <img src="images/testimonial/testimonial18.png" alt="Facebook comment 5">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-orange">
+                            <img src="images/testimonial/testimonial19.png" alt="Facebook comment 6">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+                        <div class="testimonial-card neon-pink">
+                            <img src="images/testimonial/testimonial20.png" alt="Facebook comment 7">
+                            <p class="testimonial-source">Commentaire Facebook</p>
+                        </div>
+
+
+                    </div>
+                </div>
+                
+                <button class="carousel-btn carousel-btn-next" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="carousel-dots"></div>
+        </section>
+
+
+        <section class="social-contact" id="contact">
+            <h2 class="rainbow-text small">Pour me contacter</h2>
+
+
+            <div class="contact-grid">
+                <a href="https://www.facebook.com/margaux.grimages" class="contact-card neon-blue">
+                    <span class="icon"><i class="fab fa-facebook"></i></span>
+                    <h3>Facebook</h3>
+                    <p>margaux grimages</p>
+                </a>
+
+                <a href="https://www.instagram.com/margauxgrimages/?__d=1%252F" class="contact-card neon-pink">
+                    <span class="icon"><i class="fab fa-instagram"></i> </span>
+                    <h3>Instagram</h3>
+                    <p>@margauxgrimages</p>
+                </a>
+
+                <a href="tel:+32495783770" class="contact-card neon-green">
+                    <span class="icon"><i class="fas fa-phone"></i> </span>
+                    <h3>Téléphone</h3>
+                    <p>+32 495 78 37 70</p>
+                </a>
+
+                <a href="mailto:grimages.et.tralala@gmail.com" class="contact-card neon-purple">
+                    <span class="icon"><i class="fas fa-envelope"></i></span>
+                    <h3>Email</h3>
+                    <p>grimages.et.tralala@gmail.com</p>
+                </a>
+            </div>
+        </section>
+
+        <div class="animation">
+        <div class="logo-container">
+            <!-- <img src="images/Cm.png" class="letter" alt="C"> -->
+            <img src="images/text/C.png" class="letter" alt="C">
+
+            <img src="images/text/O.png" class="letter" alt="O">
+            <img src="images/text/L.png" class="letter" alt="L">
+            <img src="images/text/O2.png" class="letter" alt="O2">
+            <img src="images/text/R.png" class="letter" alt="R">
+            <img src="images/text/E.png" class="letter" alt="E">
+            <img src="images/text/Z.png" class="letter Z" alt="Z">
+        </div>
+        <div class="logo-container">
+            <img src="images/text/V.png" class="letter" alt="V">
+            <img src="images/text/O3.png" class="letter" alt="O3">
+            <img src="images/text/S.png" class="letter" alt="S">
+        </div>
+
+        <div class="logo-container">
+            <img src="images/text/F.png" class="letter" alt="F">
+            <img src="images/text/Et.png" class="letter" alt="Et">
+            <img src="images/text/T.png" class="letter" alt="T">
+            <img src="images/text/E2.png" class="letter" alt="E2">
+            <img src="images/text/S2.png" class="letter" alt="S2">
+            <img src="images/text/exl.png" class="letter" alt="exl">
+
+
+        </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rainbow Visions Face Art | Follow the Magic</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+</body>
+</html>
